@@ -48,6 +48,7 @@ function LoginPage() {
       }
     } catch (error) {
       console.error('Error during login:', error);
+      console.log('API base URL:', process.env.REACT_APP_API_BASE_URL);
       setError('Failed to connect to the server. Please try again later.');
       setLoading(false);
     } finally {
