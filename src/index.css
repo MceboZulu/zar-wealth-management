@@ -1,0 +1,47 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+:root {
+  --primary-color: #007bff; /* A nice blue */
+  --secondary-color: #6c757d; /* A medium grey */
+  --accent-color: #28a745; /* A positive green */
+  --background-color: #f8f9fa; /* Light grey background */
+  --text-color-primary: #333; /* Dark grey for primary text */
+  --text-color-secondary: #555; /* Medium grey for secondary text */
+  --border-color: #ddd; /* Light grey for borders */
+  --box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  --border-radius: 8px;
+  --font-family-base: 'Open Sans', sans-serif;
+  --font-family-heading: 'Montserrat', sans-serif;
+}
+
+body {
+  font-family: var(--font-family-base);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color-primary);
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-family-heading);
+  color: var(--text-color-primary);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
