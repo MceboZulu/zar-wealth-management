@@ -21,8 +21,8 @@ function DashboardPage() {
   const [recentTransactionsData, setRecentTransactionsData] = useState([]);
   const [keyPerformanceIndicators, setKeyPerformanceIndicators] = useState([]);
   const [marketIndicesData, setMarketIndicesData] = useState([]);
-  // const [announcements, setAnnouncements] = useState([]);
-  // const [quickActions, setQuickActions] = useState([]);
+  const [announcements, setAnnouncements] = useState([]);
+  const [quickActions, setQuickActions] = useState([]);
   const now = new Date();
   const greeting = now.getHours() < 12 ? 'Good morning' : now.getHours() < 18 ? 'Good afternoon' : 'Good evening';
 
@@ -52,6 +52,9 @@ function DashboardPage() {
           setKeyPerformanceIndicators(data.kpis || []);
           setMarketIndicesData(data.marketIndices || []);
           setLoading(false);
+          setAnnouncements(data.announcements || []);
+          setQuickActions(data.quickActions || []);
+
         } else if (response.status === 401) {
           localStorage.removeItem('authToken');
           navigate('/login');
