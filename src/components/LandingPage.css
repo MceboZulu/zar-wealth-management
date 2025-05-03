@@ -1,0 +1,131 @@
+/* src/components/LandingPage.css */
+.landing-page {
+  background-image: url('../images/jozi.jpg'); /* Replace with your image path */
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff; /* Default to white text initially */
+  font-family: var(--font-family-base);
+}
+
+.landing-overlay {
+  background-color: rgba(0, 0, 0, 0.25); /* Slightly darker overlay if needed */
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.landing-content {
+  text-align: center;
+  z-index: 10;
+}
+
+.landing-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #fff; /* White heading for contrast */
+  font-family: var(--font-family-heading);
+}
+
+.landing-content p {
+  font-size: 1.2em;
+  margin-bottom: 30px;
+  color: #eee; /* Light grey paragraph for better readability */
+}
+
+.landing-buttons {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.landing-buttons a {
+  text-decoration: none;
+}
+
+.signup-button,
+.login-button,
+.tutorial-button {
+  font-family: var(--font-family-base);
+  padding: 15px 30px;
+  border-radius: var(--border-radius);
+  font-size: 1.1em;
+  transition: background-color var(--transition-duration) var(--transition-easing),
+              color var(--transition-duration) var(--transition-easing),
+              transform 0.2s ease-in-out,
+              border-color var(--transition-duration) var(--transition-easing); /* Add border-color transition */
+}
+
+.signup-button {
+  background-color: #007bff; /* Strong blue */
+  color: #fff;
+  border: 2px solid #007bff; /* Add a border for definition */
+}
+
+.signup-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+  border-color: #0056b3;
+}
+
+.login-button {
+  background-color: transparent;
+  color: #fff;
+  border: 2px solid #fff; /* White border */
+}
+
+.login-button:hover {
+  background-color: rgba(255, 255, 255, 0.2); /* Slightly darker white on hover */
+  color: #fff;
+  transform: scale(1.05);
+  border-color: #fff;
+}
+
+.tutorial-button {
+  background-color: #28a745; /* Vibrant green */
+  color: #fff;
+  border: 2px solid #28a745; /* Add a border */
+  text-decoration: none;
+}
+
+.tutorial-button:hover {
+  background-color: #1e7e34;
+  transform: scale(1.05);
+  border-color: #1e7e34;
+}
+
+
+.landing-header {
+  position: absolute;
+  top: 20px; /* Adjust top spacing as needed */
+  left: 20px; /* Adjust left spacing as needed */
+  z-index: 20; /* Ensure it's above the overlay content */
+  color: var(--primary-color); /* Or any color you prefer for the name */
+  display: flex;
+  align-items: center; /* Vertically align name and logo if you add one */
+}
+
+.company-name {
+  font-size: 2em; /* Adjust size of the company name */
+  margin-right: 20px; /* Space between name and logo */
+  font-family: var(--font-family-heading); /* Use your heading font */
+}
+
+.company-logo {
+  /* Styles for your logo if you add one */
+  height: 50px; /* Adjust logo height */
+}
+
+.landing-content {
+  /* ... existing styles ... */
+  text-align: center; /* Keep content centered */
+}

@@ -1,0 +1,31 @@
+.app-footer {
+    background-color: #f0f0f0;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 0.8em;
+    border-top: 1px solid #ccc;
+  }
+  
+  .app-footer ul {
+    list-style: none;
+    padding: 0;
+    margin: 5px 0;
+  }
+  
+  .app-footer li {
+    display: inline;
+    margin-right: 15px;
+  }
+  
+  .app-footer li:last-child {
+    margin-right: 0;
+  }
+  
+  .app-footer a {
+    color: #333;
+    text-decoration: none;
+  }
+  
+  .app-footer a:hover {
+    text-decoration: underline;
+  }

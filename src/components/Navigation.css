@@ -1,0 +1,57 @@
+.app-navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px;
+  align-items: center; /* Vertically align icons and text */
+}
+
+.app-navigation li {
+  margin: 0;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-color-primary);
+  font-weight: bold;
+  padding: 10px 15px;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  display: flex; /* Align icon and text within the link */
+  align-items: center;
+  gap: 8px; /* Space between icon and text */
+}
+
+.nav-link:hover {
+  background-color: #f0f0f0;
+  color: var(--primary-color);
+}
+
+.nav-icon {
+  font-size: 1.2em; /* Adjust icon size as needed */
+}
+
+/* src/components/Navigation.css */
+.app-navigation {
+  background-color: var(--background-color-light);
+  border-bottom: 1px solid var(--border-color);
+  padding: 15px 20px;
+}
+
+.app-navigation ul {
+  /* ... */
+}
+
+.nav-link {
+  color: var(--text-color-primary);
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  background-color: #37474f; /* Darker hover background */
+}
+
+.nav-icon {
+  color: var(--primary-color);
+}

@@ -1,0 +1,117 @@
+.profile-page {
+    padding: 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .profile-page h2 {
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  .profile-info,
+  .verification-status {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .profile-info h3,
+  .verification-status h3 {
+    color: #333;
+    margin-top: 0;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 10px;
+  }
+  
+  .info-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  
+  .info-item label {
+    width: 100px;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .info-item span {
+    flex-grow: 1;
+    padding: 8px 0;
+    color: #333;
+  }
+  
+  .info-item input[type="text"],
+  .info-item input[type="email"] {
+    flex-grow: 1;
+    padding: 8px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1em;
+  }
+  
+  .profile-info button {
+    padding: 8px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    transition: background-color 0.3s ease;
+    margin-top: 15px;
+  }
+  
+  .profile-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  .edit-actions button {
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 0.9em;
+    margin-right: 10px;
+  }
+  
+  .edit-actions button:first-child {
+    background-color: #28a745; /* Save button */
+    color: white;
+    border: none;
+  }
+  
+  .edit-actions button:first-child:hover {
+    background-color: #1e7e34;
+  }
+  
+  .edit-actions button:last-child {
+    background-color: #dc3545; /* Cancel button */
+    color: white;
+    border: none;
+  }
+  
+  .edit-actions button:last-child:hover {
+    background-color: #c82333;
+  }
+  
+  .verification-status p {
+    color: #555;
+  }
+  
+  .verification-status .pending {
+    color: orange;
+    font-weight: bold;
+  }
+  
+  .verification-status .approved {
+    color: green;
+    font-weight: bold;
+  }
+  
+  .verification-status .rejected {
+    color: red;
+    font-weight: bold;
+  }

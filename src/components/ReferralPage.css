@@ -1,0 +1,65 @@
+/* src/components/ReferralPage.css */
+.referral-page {
+    padding: 20px;
+    background-color: var(--background-color);
+    color: var(--text-color-primary);
+  }
+  
+  .referral-page h2 {
+    margin-bottom: 15px;
+    color: var(--text-color-primary);
+  }
+  
+  .referral-link-display {
+    background-color: var(--background-color-light);
+    border: 1px solid var(--border-color-light);
+    padding: 15px;
+    border-radius: var(--border-radius);
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+  
+  .referral-link-display code {
+    flex-grow: 1;
+    font-family: monospace;
+    background-color: #eee;
+    padding: 8px;
+    border-radius: 5px;
+    font-size: 0.9em;
+  }
+  
+  .referral-link-display button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    transition: background-color var(--transition-duration) var(--transition-easing);
+  }
+  
+  .referral-link-display button:hover {
+    background-color: var(--primary-color-darker);
+  }
+  
+  .referral-page h3 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    color: var(--text-color-primary);
+  }
+  
+  .referral-page ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .referral-page li {
+    padding: 8px 0;
+    border-bottom: 1px solid var(--border-color-light);
+  }
+  
+  .referral-page li:last-child {
+    border-bottom: none;
+  }
