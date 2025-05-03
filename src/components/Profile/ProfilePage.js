@@ -19,10 +19,10 @@ function ProfilePage() {
   const [newDocument, setNewDocument] = useState(null);
   const [isAddingAddress, setIsAddingAddress] = useState(false);
   const [newAddress, setNewAddress] = useState({ type: '', street: '', city: '', country: '' });
-  const [isAddingPhoneNumber, setIsAddingPhoneNumber] = useState(false);
-  const [newPhoneNumber, setNewPhoneNumber] = useState({ type: '', number: '' });
-  const [isAddingCard, setIsAddingCard] = useState(false);
-  const [newCardDetails, setNewCardDetails] = useState({ type: '', number: '', expiry: '', cvv: '' });
+  // const [isAddingPhoneNumber, setIsAddingPhoneNumber] = useState(false);
+  // const [newPhoneNumber, setNewPhoneNumber] = useState({ type: '', number: '' });
+  // const [isAddingCard, setIsAddingCard] = useState(false);
+  // const [newCardDetails, setNewCardDetails] = useState({ type: '', number: '', expiry: '', cvv: '' });
 
   const [isEditingInfo, setIsEditingInfo] = useState(false);
   const [loading, setLoading] = useState(true);

@@ -2,7 +2,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './LandingPage.css';
-import Footer from './Layout/Footer';
+// import Footer from './Layout/Footer';
 
 function LandingPage() {
   return (

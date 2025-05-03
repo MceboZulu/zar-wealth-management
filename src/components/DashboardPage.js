@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import './DashboardPage.css';
 import Navigation from './Navigation';
 import { useNavigate } from 'react-router-dom';
-import { FaUserCircle, FaUser, FaChartLine, FaListAlt, FaHistory, FaArrowUp, FaArrowDown, FaLock, FaExchangeAlt, FaUsers, FaMoneyBill } from 'react-icons/fa';
+import { FaUserCircle, FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Footer from './Layout/Footer';
 import { Oval } from 'react-loader-spinner';
@@ -21,8 +21,8 @@ function DashboardPage() {
   const [recentTransactionsData, setRecentTransactionsData] = useState([]);
   const [keyPerformanceIndicators, setKeyPerformanceIndicators] = useState([]);
   const [marketIndicesData, setMarketIndicesData] = useState([]);
-  const [announcements, setAnnouncements] = useState([]);
-  const [quickActions, setQuickActions] = useState([]);
+  // const [announcements, setAnnouncements] = useState([]);
+  // const [quickActions, setQuickActions] = useState([]);
   const now = new Date();
   const greeting = now.getHours() < 12 ? 'Good morning' : now.getHours() < 18 ? 'Good afternoon' : 'Good evening';
 

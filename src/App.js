@@ -1,6 +1,6 @@
 // src/App.js
 import React, { useState } from 'react';
-import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import LandingPage from './components/LandingPage';
 import SignUpPage from './components/SignUpPage';
 import LoginPage from './components/LoginPage';
@@ -11,7 +11,7 @@ import PortfolioPage from './components/Navigation/PortfolioPage';
 import WatchlistPage from './components/Navigation/WatchlistPage';
 import TransactionsPage from './components/Navigation/TransactionsPage';
 import ProfilePage from './components/Profile/ProfilePage';
-import Navigation from './components/Navigation';
+// import Navigation from './components/Navigation';
 import FundsPage from './components/Funds/FundsPage';
 import ReferralPage from './components/ReferralPage';
 

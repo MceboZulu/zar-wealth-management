@@ -2,7 +2,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import './LoginPage.css';
-import Loader from '../components/Loader/Loader';
+// import Loader from '../components/Loader/Loader';
 import { Oval } from 'react-loader-spinner';
 
 const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;

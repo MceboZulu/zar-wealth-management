@@ -17,7 +17,7 @@ function WatchlistPage() {
     // Simulate fetching user's watchlist from backend
     const initialWatchlist = [availableAssets[0].symbol, availableAssets[1].symbol];
     setWatchlist(initialWatchlist);
-  }, []);
+  }, [availableAssets]);
 
   const handleSearchChange = (event) => {
     const query = event.target.value.toLowerCase();
