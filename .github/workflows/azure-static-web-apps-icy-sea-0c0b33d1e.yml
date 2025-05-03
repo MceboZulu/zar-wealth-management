@@ -28,6 +28,10 @@ jobs:
       - name: Build React app
         run: npm run build
 
+      - name: Set environment variables
+        run: echo "REACT_APP_API_BASE_URL=${{ vars.REACT_APP_API_BASE_URL }}" >> $GITHUB_ENV
+
+
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
       - name: Get Id Token
