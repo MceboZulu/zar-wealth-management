@@ -9,7 +9,7 @@ import Footer from './Layout/Footer';
 import { Oval } from 'react-loader-spinner';
 
 // const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-const API_BASE_URL = 'http://192.168.68.104:2727';  
+const API_BASE_URL = 'https://4eec-41-1-71-226.ngrok-free.app';  
 
 function DashboardPage() {
   const [userData, setUserData] = useState(null);
