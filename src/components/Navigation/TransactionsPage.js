@@ -1,5 +1,5 @@
 // src/components/TransactionsPage.js
-import React, { useState } from 'react';
+import React from 'react';
 import './TransactionsPage.css';
 import Navigation from '../Navigation';
 // import { Oval } from 'react-loader-spinner';
