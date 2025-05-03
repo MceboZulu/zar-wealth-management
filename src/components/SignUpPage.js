@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './SignUpPage.css';
 import { Oval } from 'react-loader-spinner';
 
-const API_BASE_URL = 'http:192.168.68.104:2727'; 
+const API_BASE_URL = 'http://192.168.68.104:2727';  
 
 function SignUpPage() {
   const [firstName, setFirstName] = useState('');
