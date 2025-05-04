@@ -34,7 +34,7 @@ function ProfilePage() {
       setError('');
       try {
         const token = localStorage.getItem('authToken');
-        const response = await fetch('https://4eec-41-1-71-226.ngrok-free.app/profile', {
+        const response = await fetch('https://211f-41-1-71-226.ngrok-free.app/profile', {
           headers: {
             'Authorization': `Bearer ${token}`,
           },
