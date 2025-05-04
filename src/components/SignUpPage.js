@@ -4,7 +4,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import './SignUpPage.css';
 import { Oval } from 'react-loader-spinner';
 
-const API_BASE_URL = 'https://211f-41-1-71-226.ngrok-free.app';  
+const API_BASE_URL = 'https://3864-41-1-71-226.ngrok-free.app';  
 
 function SignUpPage() {
   const [firstName, setFirstName] = useState('');
