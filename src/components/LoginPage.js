@@ -6,7 +6,7 @@ import './LoginPage.css';
 import { Oval } from 'react-loader-spinner';
 
 // const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-const API_BASE_URL = 'https://3864-41-1-71-226.ngrok-free.app'; 
+const API_BASE_URL = 'https://18aa-41-1-71-226.ngrok-free.app'; 
 
 function LoginPage() {
   const [email, setEmail] = useState('');
