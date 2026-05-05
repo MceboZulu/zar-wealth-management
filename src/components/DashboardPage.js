@@ -1,4 +1,3 @@
-// src/components/DashboardPage.js
 import React, { useState, useEffect } from 'react';
 import './DashboardPage.css';
 import Navigation from './Navigation';
@@ -7,9 +6,9 @@ import { FaUserCircle, FaArrowUp, FaArrowDown } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import Footer from './Layout/Footer';
 import { Oval } from 'react-loader-spinner';
+require('dotenv').config();
 
-// const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-const API_BASE_URL = 'https://2919-41-1-84-255.ngrok-free.app';  
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 function DashboardPage() {
   const [userData, setUserData] = useState(null);
@@ -45,7 +44,7 @@ function DashboardPage() {
 
         if (response.ok) {
           const data = await response.json();
-          setUserData(data.user); // Assuming your API returns user data under a 'user' key
+          setUserData(data.user);
           setPortfolioOverviewData(data.portfolioOverview || { totalValue: 0, profitLoss: 0, profitLossPercentage: '0%', topHoldings: [] });
           setWatchlistData(data.watchlist || []);
           setMarketNewsData(data.marketNews || []);
