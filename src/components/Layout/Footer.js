@@ -13,7 +13,6 @@ function Footer() {
         <li>
           <Link to="/privacy">Privacy Policy</Link>
         </li>
-        {/* You can add more links here if needed */}
       </ul>
     </footer>
   );
