@@ -32,7 +32,7 @@
     border-bottom: none;
   }
   
-  .transactions-table td:nth-child(3), /* Quantity */
-  .transactions-table td:nth-child(4)  /* Price */ {
+  .transactions-table td:nth-child(3),
+  .transactions-table td:nth-child(4) {
     text-align: right;
   }
