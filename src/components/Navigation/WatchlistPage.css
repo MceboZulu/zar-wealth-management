@@ -77,7 +77,7 @@
   
   .watched-assets button {
     padding: 5px 10px;
-    background-color: #dc3545; /* Red for remove */
+    background-color: #dc3545;
     color: white;
     border: none;
     border-radius: 4px;
