@@ -3,9 +3,9 @@ import './TradePage.css';
 import Navigation from '../Navigation';
 import { useNavigate } from 'react-router-dom';
 import { Oval } from 'react-loader-spinner';
+require('dotenv').config();
 
-// const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-const API_BASE_URL = 'http:192.168.68.104:2727'; 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 function TradePage() {
     const [selectedAsset, setSelectedAsset] = useState('');
@@ -95,7 +95,7 @@ function TradePage() {
         const fetchCashBalance = async () => {
             const token = localStorage.getItem('authToken');
             try {
-                const response = await fetch(`${API_BASE_URL}/api/user/balance`, { // New endpoint to get balance
+                const response = await fetch(`${API_BASE_URL}/api/user/balance`, {
                     headers: {
                         'Authorization': `Bearer ${token}`,
                     },
@@ -157,7 +157,7 @@ function TradePage() {
                     assetSymbol: selectedAsset,
                     tradeType,
                     quantity,
-                    price: currentPrice, // Include current price in the order
+                    price: currentPrice,
                 }),
             });
 
@@ -166,12 +166,7 @@ function TradePage() {
                 setTradeMessage({ text: data.message || `Successfully executed ${tradeType} order.`, type: 'success' });
                 setSelectedAsset('');
                 setQuantity(0);
-                setLoading(true); // Reset loading state to fetch new data
-                // Optionally trigger a refresh of portfolio data on dashboard
-                // You might use a context or a state management solution for this
-                // For now, a simple reload might suffice if it's crucial to see immediate changes
-                // window.location.reload();
-                // Or navigate back to dashboard and it will fetch fresh data
+                setLoading(true);
                 navigate('/dashboard');
             } else if (response.status === 401) {
                 navigate('/login', { replace: true });
