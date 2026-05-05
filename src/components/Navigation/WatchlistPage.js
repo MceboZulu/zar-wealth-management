@@ -1,20 +1,18 @@
 import React, { useState, useEffect } from 'react';
-import './WatchlistPage.css'; // Create this CSS file
+import './WatchlistPage.css';
 
 function WatchlistPage() {
   const [watchlist, setWatchlist] = useState([]);
   const [searchQuery, setSearchQuery] = useState('');
   const [searchResults, setSearchResults] = useState([]);
-  const [availableAssets] = useState([ // Static list for now
+  const [availableAssets] = useState([
     { symbol: 'JSE:NPN', name: 'Naspers Ltd', currentPrice: 2650.00, change: +15.50 },
     { symbol: 'JSE:AGL', name: 'Anglo American plc', currentPrice: 520.00, change: -5.00 },
     { symbol: 'JSE:SBK', name: 'Standard Bank Group Ltd', currentPrice: 185.20, change: +2.10 },
     { symbol: 'JSE:MTN', name: 'MTN Group Ltd', currentPrice: 110.75, change: -0.50 },
-    // ... more simulated assets
   ]);
 
   useEffect(() => {
-    // Simulate fetching user's watchlist from backend
     const initialWatchlist = [availableAssets[0].symbol, availableAssets[1].symbol];
     setWatchlist(initialWatchlist);
   }, [availableAssets]);
@@ -31,7 +29,7 @@ function WatchlistPage() {
   const handleAddToWatchlist = (symbol) => {
     if (!watchlist.includes(symbol)) {
       setWatchlist([...watchlist, symbol]);
-      setSearchResults([]); // Clear search results after adding
+      setSearchResults([]);
       setSearchQuery('');
     }
   };
