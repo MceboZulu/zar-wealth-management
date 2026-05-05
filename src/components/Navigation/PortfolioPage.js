@@ -2,9 +2,9 @@ import React, { useState, useEffect } from 'react';
 import './PortfolioPage.css';
 import Navigation from '../Navigation';
 import { useNavigate } from 'react-router-dom';
+require('dotenv').config();
 
-// const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
-const API_BASE_URL = 'http:192.168.68.104:2727'; 
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 function PortfolioPage() {
     const [portfolioData, setPortfolioData] = useState({ cashBalance: 0, holdings: [] });
