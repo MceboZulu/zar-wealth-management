@@ -1,5 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import './ProfilePage.css';
+require('dotenv').config();
+
+const API_BASE_URL = process.env.REACT_APP_API_BASE_URL;
 
 function ProfilePage() {
   const [firstName, setFirstName] = useState('');
@@ -34,7 +37,7 @@ function ProfilePage() {
       setError('');
       try {
         const token = localStorage.getItem('authToken');
-        const response = await fetch('https://3864-41-1-71-226.ngrok-free.app/profile', {
+        const response = await fetch(`${API_BASE_URL}/profile`, {
           headers: {
             'Authorization': `Bearer ${token}`,
           },
@@ -73,7 +76,7 @@ function ProfilePage() {
     setError('');
     try {
       const token = localStorage.getItem('authToken');
-      const response = await fetch('http://192.168.68.104:2727/profile', {
+      const response = await fetch(`${API_BASE_URL}/profile`, {
         method: 'PUT',
         headers: {
           'Content-Type': 'application/json',
@@ -112,7 +115,7 @@ function ProfilePage() {
         const token = localStorage.getItem('authToken');
         const formData = new FormData();
         formData.append('document', newDocument);
-        const response = await fetch('/api/users/documents/upload', {
+        const response = await fetch(`${API_BASE_URL}/api/users/documents/upload`, {
           method: 'POST',
           headers: {
             'Authorization': `Bearer ${token}`,
@@ -139,7 +142,7 @@ function ProfilePage() {
     setError('');
     try {
       const token = localStorage.getItem('authToken');
-      const response = await fetch('/api/users/addresses', {
+      const response = await fetch(`${API_BASE_URL}/api/users/addresses`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
